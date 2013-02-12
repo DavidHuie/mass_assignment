@@ -1,10 +1,13 @@
 module MassAssignment
+
   def self.included(base)
     base.class_eval do
       class_attribute :assignment_policy, :instance_reader => false, :instance_writer => false
+
       def self.mass_assignment_policy(val)
         self.assignment_policy = val
       end
+
     end
   end
 
@@ -55,7 +58,7 @@ module MassAssignment
     end
   end
 
-  def filter_attributes(attributes, options = {}) # could surely be refactored.
+  def filter_attributes(attributes, options = {})
     attributes = attributes.stringify_keys
 
     if options[:only]
