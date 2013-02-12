@@ -2,10 +2,10 @@ $LOAD_PATH << File.dirname(__FILE__) + '/lib'
 
 Gem::Specification.new do |s|
   s.name = 'mass_assignment'
-  s.version = '1.1.0'
-  s.authors = ['Lance Ivy']
+  s.version = '1.1.1'
+  s.authors = ['Lance Ivy', 'David Huie']
   s.email = 'lance@cainlevy.net'
-  s.homepage = 'http://github.com/cainlevy/mass_assignment'
+  s.homepage = 'http://github.com/DavidHuie/mass_assignment'
   s.summary = 'Simple and secure params assignment for ActiveRecord'
   s.description = 'An alternative to attr_protected that supports a simpler, more secure params assignment mindset while also encouraging obviousness.'
 
